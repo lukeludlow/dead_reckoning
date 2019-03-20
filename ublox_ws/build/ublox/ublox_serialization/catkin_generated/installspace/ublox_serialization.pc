@@ -1,0 +1,8 @@
+prefix=/home/luke/dead_reckoning/ublox_ws/install
+
+Name: ublox_serialization
+Description: Description of ublox_serialization
+Version: 1.1.2
+Cflags: -I/home/luke/dead_reckoning/ublox_ws/install/include
+Libs: -L/home/luke/dead_reckoning/ublox_ws/install/lib 
+Requires: roscpp roscpp_serialization
