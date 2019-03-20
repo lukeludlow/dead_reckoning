@@ -1,0 +1,2 @@
+razor_imu_9dof
+-DCATKIN_DEVEL_PREFIX=/home/luke/dead_reckoning/razor_ws/devel -DCMAKE_INSTALL_PREFIX=/home/luke/dead_reckoning/razor_ws/install -G Unix Makefiles
