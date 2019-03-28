@@ -272,12 +272,18 @@ boolean output_errors = false;  // true or false
 // For the M0, only the extended magnetometer calibration seems to be really necessary if DEBUG__USE_DMP_M0 is set to true...
 // Accelerometer
 // "accel x,y,z (min/max) = X_MIN/X_MAX  Y_MIN/Y_MAX  Z_MIN/Z_MAX"
-float ACCEL_X_MIN = -250;
-float ACCEL_X_MAX = 250;
-float ACCEL_Y_MIN = -250;
-float ACCEL_Y_MAX = 250;
-float ACCEL_Z_MIN = -250;
-float ACCEL_Z_MAX = 250;
+// float ACCEL_X_MIN = -250;
+// float ACCEL_X_MAX = 250;
+// float ACCEL_Y_MIN = -250;
+// float ACCEL_Y_MAX = 250;
+// float ACCEL_Z_MIN = -250;
+// float ACCEL_Z_MAX = 250;
+float ACCEL_X_MIN = -259.89;
+float ACCEL_X_MAX = 263.06;
+float ACCEL_Y_MIN = -266.11;
+float ACCEL_Y_MAX = 266.85;
+float ACCEL_Z_MIN = -264.04;
+float ACCEL_Z_MAX = 262.45;
 
 // Magnetometer (standard calibration mode)
 // "magn x,y,z (min/max) = X_MIN/X_MAX  Y_MIN/Y_MAX  Z_MIN/Z_MAX"
@@ -288,17 +294,25 @@ float MAGN_Y_MAX = 600;
 float MAGN_Z_MIN = -600;
 float MAGN_Z_MAX = 600;
 
+
 // Magnetometer (extended calibration mode)
 // Set to true to use extended magnetometer calibration (compensates hard & soft iron errors)
-boolean CALIBRATION__MAGN_USE_EXTENDED = false;
-float magn_ellipsoid_center[3] = {0, 0, 0};
-float magn_ellipsoid_transform[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+// boolean CALIBRATION__MAGN_USE_EXTENDED = false;
+// float magn_ellipsoid_center[3] = {0, 0, 0};
+// float magn_ellipsoid_transform[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+boolean CALIBRATION__MAGN_USE_EXTENDED = true;
+float magn_ellipsoid_center[3] = {193.377, -427.004, -702.419};
+float magn_ellipsoid_transform[3][3] = {{0.987264, -0.00512113, 0.0030007}, {-0.00512113, 0.996566, -0.00339282}, {0.00300072, -0.00339282, 0.983901}};
+
 
 // Gyroscope
 // "gyro x,y,z (current/average) = .../OFFSET_X  .../OFFSET_Y  .../OFFSET_Z
-float GYRO_AVERAGE_OFFSET_X = 0.0;
-float GYRO_AVERAGE_OFFSET_Y = 0.0;
-float GYRO_AVERAGE_OFFSET_Z = 0.0;
+// float GYRO_AVERAGE_OFFSET_X = 0.0;
+// float GYRO_AVERAGE_OFFSET_Y = 0.0;
+// float GYRO_AVERAGE_OFFSET_Z = 0.0;
+float GYRO_AVERAGE_OFFSET_X = -0.02;
+float GYRO_AVERAGE_OFFSET_Y = -0.02;
+float GYRO_AVERAGE_OFFSET_Z = 0.00;
 
 /*
 // Calibration example:
