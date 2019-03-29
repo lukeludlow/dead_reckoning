@@ -1,2 +1,0 @@
-ublox/ublox:ublox/ublox_gps:ublox/ublox_msgs:ublox/ublox_serialization
--DCATKIN_DEVEL_PREFIX=/home/luke/dead_reckoning/ublox_ws/devel -DCMAKE_INSTALL_PREFIX=/home/luke/dead_reckoning/ublox_ws/install -G Unix Makefiles
