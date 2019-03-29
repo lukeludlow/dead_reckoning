@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>gps_imu</name>
+  <name>dead_reckoning</name>
   <version>1.0.0</version>
   <description>gps and imu stuff</description>
   <author>luke</author>
