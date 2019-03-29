@@ -1,0 +1,4 @@
+*.make linguist-vendored
+*.cmake linguist-vendored
+*.js linguist-vendored
+
