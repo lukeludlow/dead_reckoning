@@ -52,7 +52,7 @@ def reconfig_callback(config, level):
     rospy.loginfo("Set imu_yaw_calibration to %d" % (imu_yaw_calibration))
     return config
 
-rospy.init_node("razor_node")
+rospy.init_node("razor_imu")
 #We only care about the most recent measurement, i.e. queue_size=1
 pub = rospy.Publisher('imu', Imu, queue_size=1)
 srv = Server(imuConfig, reconfig_callback)  # define dynamic_reconfigure callback
