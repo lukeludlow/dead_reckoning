@@ -1,5 +1,5 @@
 <package>
-  <name>razor_imu_9dof</name>
+  <name>razor_imu</name>
   <version>1.2.0</version>
   <description>
      razor_imu_9dof is a package that provides a ROS driver
